@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-rain {
+  animation: rain 1s linear infinite;
+}
+
+.animate-snow {
+  animation: snow 3s ease-in-out infinite;
+}
+
+.animate-cloud {
+  animation: cloud 15s linear infinite;
+}
+
+.animate-fade {
+  animation: fade 5s ease-in-out infinite;
+}
+
+.animate-flash {
+  animation: flash 0.5s ease-in-out infinite;
+}
